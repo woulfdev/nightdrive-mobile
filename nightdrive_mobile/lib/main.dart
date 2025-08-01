@@ -11,6 +11,23 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      home: DefaultTabController(
+        length: 4,
+        child: Scaffold(
+          appBar: AppBar(
+            bottom: const TabBar(
+              tabs: [
+                Tab(icon: Icon(Icons.home_outlined)),
+                Tab(icon: Icon(Icons.gps_fixed)),
+                Tab(icon: Icon(Icons.people_outline)),
+                Tab(icon: Icon(Icons.settings_outlined))
+              ],
+            ),
+            title: const Text("Hello Woulf"),
+            backgroundColor: Colors.black,
+          ),
+        )
+        ),
       title: 'NightDrive',
       theme: ThemeData(
         // This is the theme of your application.
@@ -30,7 +47,6 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }

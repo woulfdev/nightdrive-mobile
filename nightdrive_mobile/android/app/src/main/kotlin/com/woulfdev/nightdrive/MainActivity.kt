@@ -1,4 +1,4 @@
-package com.example.nightdrive_mobile
+package com.woulfdev.nightdrive
 
 import io.flutter.embedding.android.FlutterActivity
 
